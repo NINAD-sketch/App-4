@@ -21,3 +21,43 @@ class _HomePageState extends State<HomePage> {
     TextToSpeechPage(),
     DiceRollerPage(),
   ];
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      body: _pages[_index],
+      bottomNavigationBar: BottomNavigationBar(
+        backgroundColor: Colors.white70,
+        elevation: 10,
+        fixedColor: Colors.deepPurple,
+        type: BottomNavigationBarType.fixed,
+        selectedFontSize: 16,
+        unselectedFontSize: 14,
+        selectedIconTheme: const IconThemeData(size: 30),
+        unselectedIconTheme: const IconThemeData(size: 24),
+        selectedLabelStyle: const TextStyle(fontWeight: FontWeight.bold),
+        unselectedLabelStyle: const TextStyle(fontWeight: FontWeight.w500),
+        showUnselectedLabels: true,
+        showSelectedLabels: true,
+        iconSize: 30,
+        currentIndex: _index, // Shows the selected tab
+        onTap: (newIndex) {
+          setState(() {
+            _index = newIndex; // Updates the selected page
+          });
+        },
+        items: const [
+          BottomNavigationBarItem(icon: Icon(Icons.pets), label: "Pets"),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.color_lens),
+            label: "Colors",
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.record_voice_over),
+            label: "TTS",
+          ),
+          BottomNavigationBarItem(icon: Icon(Icons.casino), label: "Dice"),
+        ],
+      ),
+    );
+  }
+}
