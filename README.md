@@ -1,4 +1,4 @@
-# Assignment_4
+# App-4
 Explore the power of Flutter packages from pub.dev by building a simple but fun app using at least one third-party package. This assignment is meant to encourage experimentation, creativity, and confidence in integrating external Flutter libraries.
 ![WhatsApp Image 2025-07-20 at 14 16 34_a43d8c63](https://github.com/user-attachments/assets/4c1dac61-ff0b-4bcc-a4d0-f679a4f8d5f1)
 ![WhatsApp Image 2025-07-20 at 14 16 34_ab49b9b8](https://github.com/user-attachments/assets/a52d7322-3c6e-4b90-b7ae-c20087a6e0fc)
